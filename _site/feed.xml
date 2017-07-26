@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>refencel</title>
+		<description>Stylish Jekyll Theme</description>
+		<link>/</link>
+		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>第一篇</title>
+				<description>&lt;p&gt;这只是我的第一篇用来测试使用的。后面会陆续加入其他文章&lt;/p&gt;
+
+</description>
+				<pubDate>Wed, 26 Jul 2017 00:00:00 +0800</pubDate>
+				<link>/general/demo/2017/07/26/first.html</link>
+				<guid isPermaLink="true">/general/demo/2017/07/26/first.html</guid>
+			</item>
+		
+	</channel>
+</rss>
