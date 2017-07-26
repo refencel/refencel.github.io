@@ -43,7 +43,7 @@ tagline:
 
 <ul class="pager"> 
 
-  {% if paginator.previous_page %}
+  <!-- {% if paginator.previous_page %}
   <li class="previous">
     {% if paginator.previous_page == 1 %}
     <a href="{{ site.BASE_PATH }}/">&larr; 上一篇</a>
@@ -55,13 +55,13 @@ tagline:
   <li class="previous disabled">
     <a>&larr; 上一篇</a>
   </li>
-  {% endif %}
+  {% endif %} -->
   
   <li>
     <span class="page_number">页数: {{ paginator.page }} of {{ paginator.total_pages }}</span>
   </li>
 
-  {% if paginator.next_page %}
+ <!--  {% if paginator.next_page %}
   <li class="next">
     <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}">下一篇 &rarr;</a>
   </li>
@@ -69,6 +69,6 @@ tagline:
   <li class="next disabled">
     <a>下一篇 &rarr;</a>        
   </li>
-  {% endif %}
+  {% endif %} -->
 
 </ul>
