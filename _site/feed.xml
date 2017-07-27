@@ -7,6 +7,16 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>图文测试片</title>
+				<description>&lt;p&gt;这是用来测试图片这是用来测试图片这是用来测试图片这是用来测试图片这是用来测试图片
+&lt;img src=&quot;http://otqb97bc4.bkt.clouddn.com/banner.jpg&quot; alt=&quot;avatar&quot; /&gt;&lt;/p&gt;
+</description>
+				<pubDate>Thu, 27 Jul 2017 00:00:00 +0800</pubDate>
+				<link>/2017/07/27/%E5%9B%BE%E6%96%87%E6%B5%8B%E8%AF%95.html</link>
+				<guid isPermaLink="true">/2017/07/27/%E5%9B%BE%E6%96%87%E6%B5%8B%E8%AF%95.html</guid>
+			</item>
+		
+			<item>
 				<title>第一篇</title>
 				<description>&lt;p&gt;这只是我的第一篇用来测试使用的。后面会陆续加入其他文章
 这只是我的第一篇用来测试使用的。后面会陆续加入其他文章
