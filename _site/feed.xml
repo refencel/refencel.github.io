@@ -10,6 +10,15 @@
 				<title>图文测试片</title>
 				<description>&lt;p&gt;这是用来测试图片这是用来测试图片这是用来测试图片这是用来测试图片这是用来测试图片
 &lt;img src=&quot;http://otqb97bc4.bkt.clouddn.com/banner.jpg&quot; alt=&quot;avatar&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;1-制作一份待办事宜-todo-列表&quot;&gt;1. 制作一份待办事宜 &lt;a href=&quot;https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#13-待办事宜-todo-列表&quot;&gt;Todo 列表&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[ ] 支持以 PDF 格式导出文稿&lt;/li&gt;
+  &lt;li&gt;[ ] 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率&lt;/li&gt;
+  &lt;li&gt;[x] 新增 Todo 列表功能&lt;/li&gt;
+  &lt;li&gt;[x] 修复 LaTex 公式渲染问题&lt;/li&gt;
+  &lt;li&gt;[x] 新增 LaTex 公式编号功能&lt;/li&gt;
+&lt;/ul&gt;
 </description>
 				<pubDate>Thu, 27 Jul 2017 00:00:00 +0800</pubDate>
 				<link>/2017/07/27/%E5%9B%BE%E6%96%87%E6%B5%8B%E8%AF%95.html</link>
@@ -26,8 +35,19 @@
 这只是我的第一篇用来测试使用的。后面会陆续加入其他文章
 这只是我的第一篇用来测试使用的。后面会陆续加入其他文章
 这只是我的第一篇用来测试使用的。后面会陆续加入其他文章
-这只是我的第一篇用来测试使用的。后面会陆续加入其他文章
 这只是我的第一篇用来测试使用的。后面会陆续加入其他文章&lt;/p&gt;
+&lt;h3 id=&quot;3-高亮一段代码code&quot;&gt;3. 高亮一段代码[^code]&lt;/h3&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;paginate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# pagination based on number of posts&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;paginate_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;page:num&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;exclude&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;README.md&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# files to exclude&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;highlighter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rouge&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;markdown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kramdown&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;disqus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;refencel&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;google_analytics&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;refencel&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;refencel&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 </description>
 				<pubDate>Wed, 26 Jul 2017 00:00:00 +0800</pubDate>
