@@ -6,6 +6,7 @@ body{
 
 .sidebar {
 	position: fixed;
+	height: 100vh;
 	top: 0px;
 	padding-top: 10%;
 	background-color: #2c3e50;
