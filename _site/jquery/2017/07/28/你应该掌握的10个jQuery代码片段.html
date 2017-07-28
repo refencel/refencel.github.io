@@ -134,7 +134,7 @@
 
 <h2 id="检查图片是否加载完毕">检查图片是否加载完毕</h2>
 <div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="s2">"img"</span><span class="p">).</span><span class="nx">load</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"图片加载成功"</span><span class="p">)</span><span class="err">；</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"图片加载成功"</span><span class="p">);</span>
 <span class="p">})</span>
 </code></pre>
 </div>
@@ -167,9 +167,9 @@
 </code></pre>
 </div>
 
-<h2 id="阻止超链接点击跳转">阻止超链接点击跳转</h2>
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="s2">"a.no-link"</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
-    <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+<h2 id="简单的选项卡">简单的选项卡</h2>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="s2">"#nav li"</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">"#panel li"</span><span class="p">).</span><span class="nx">eq</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">index</span><span class="p">()).</span><span class="nx">show</span><span class="p">().</span><span class="nx">siblings</span><span class="p">().</span><span class="nx">hide</span><span class="p">();</span>
 <span class="p">})</span>
 </code></pre>
 </div>
