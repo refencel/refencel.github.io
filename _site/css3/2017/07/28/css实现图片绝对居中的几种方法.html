@@ -2,7 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>分类</title>
+	<title>css实现图片绝对居中的几种方法</title>
+	
+	<meta name="description" content="本文章介绍使用css实现图片上下左右的绝对居中，由于使用的是css3属性，ie8以下就不考虑兼容了。">
 	
 	<meta name="author" content="refencel">
 
@@ -106,66 +108,96 @@
 
 	<div class="col-sm-9 col-sm-offset-3">
 		<div class="page-header">
-  <h1>分类 </h1>
+  <h1>css实现图片绝对居中的几种方法 </h1>
 </div>
+	
+<article>
 
-<div class="col-sm-3 col-xs-6">
-    <ul class="nav nav-tabs-vertical cat-tag-menu">
-      
-      
-        
-            <li>
-                <a href="#css3-ref">
-                    Css3 <span class="badge pull-right">1</span>
-                </a>
-            </li>
-        
-            <li>
-                <a href="#jQuery-ref">
-                    Jquery <span class="badge pull-right">1</span>
-                </a>
-            </li>
-        
-      
-      
-    </ul>
-</div>
-<!-- Tab panes -->
-<div class="tab-content col-sm-9 col-xs-6">
-  
-    <div class="tab-pane" id="css3-ref">
-      <h2 style="margin-top: 0px">Css3</h2>
-      <ul class="list-unstyled">
-        
-        
-          
-            
-              <li style="line-height: 35px;"><a href="/css3/2017/07/28/css%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E7%BB%9D%E5%AF%B9%E5%B1%85%E4%B8%AD%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95.html">css实现图片绝对居中的几种方法</a> <span class="text-muted">&nbsp;&nbsp;7/28/2017</span></li>
-            
-          
-        
-        
-      </ul>
-    </div>
-  
-    <div class="tab-pane" id="jQuery-ref">
-      <h2 style="margin-top: 0px">Jquery</h2>
-      <ul class="list-unstyled">
-        
-        
-          
-            
-              <li style="line-height: 35px;"><a href="/jquery/2017/07/28/%E4%BD%A0%E5%BA%94%E8%AF%A5%E6%8E%8C%E6%8F%A1%E7%9A%8410%E4%B8%AAjQuery%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5.html">你应该掌握的10个jQuery代码片段</a> <span class="text-muted">&nbsp;&nbsp;7/28/2017</span></li>
-            
-          
-        
-        
-      </ul>
-    </div>
-  
-</div>
+	<div class="col-sm-12">
+	 <span class="post-date">	   2017-07-28
+	 </span>
+	  <div class="article_body">
+	  <p>在制作页面的时候我们经常需要将图片实现居对，甚至有些时候图片宽高都是不固定的，所以我总结了几种让图片居中的方法。</p>
 
+<h2 id="第一种方法">第一种方法</h2>
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">img</span><span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="m">0px</span><span class="p">;</span>
+    <span class="nl">right</span><span class="p">:</span> <span class="m">0px</span><span class="p">;</span>
+    <span class="nl">bottom</span><span class="p">:</span> <span class="m">0px</span><span class="p">;</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="m">0px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+<p>其中<code class="highlighter-rouge">margin: auto;</code>是不可缺少的</p>
+
+<h2 id="第二种方法">第二种方法</h2>
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">img</span><span class="p">{</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+    <span class="nl">transform</span><span class="p">:</span> <span class="n">translate</span><span class="p">(</span><span class="m">-50%</span><span class="p">,</span> <span class="m">-50%</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+<h2 id="第三种方法">第三种方法</h2>
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nc">.parent</span><span class="p">{</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">100vh</span><span class="p">;</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+    <span class="nl">justify-content</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+<p>这种方法需要给父类元素指定高度，负责不生效。</p>
+
+
+	  </div>
+
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#css3-ref">
+					css3 <span>(1)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		   
+
+		<hr>
+
+		<div>
+
+      <section class="col-sm-6 author">
+        <img src="http://otqb97bc4.bkt.clouddn.com/logo.jpg" class="img-rounded author-image" width="80" height="80" />
+        <h4 class="section-title author-name">refencel</h4>
+        <p class="author-bio">我的博客，记录你的点滴</p>
+      </section>
+    </div>
+
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous disabled"><a>&larr; 上一篇</a></li>
+		  
+		  
+		  <li class="next"><a href="/jquery/2017/07/28/%E4%BD%A0%E5%BA%94%E8%AF%A5%E6%8E%8C%E6%8F%A1%E7%9A%8410%E4%B8%AAjQuery%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5.html" title="你应该掌握的10个jQuery代码片段">下一篇 &rarr;</a></li>
+		  
+		</ul>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
 <div class="clearfix"></div>
+
 
 
 
