@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>你应该掌握的10个jQuery代码片段</title>
+	
+	<meta name="description" content="jQuery被用在无数个网站的页面上，它是使用最为广泛的javascript库之一。jQuery的受欢迎程度的部分是它的简单性。它能够通过简单的语句完成大部分复杂的工作。有许多jQuery片段我们在每天不断重复的使用，这里总结了10条你必须知道的jQuery代码片段。">
+	
+	<meta name="author" content="refencel">
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le styles -->
+	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="http://otqb97bc4.bkt.clouddn.com/logo.jpg">
+
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="mailto:1252721319@qq.com">
+				<i class="fa fa-envelope"></i>
+			</a>
+			
+			<a class="navbar-brand" href="/">
+				<img src="http://otqb97bc4.bkt.clouddn.com/logo.jpg" class="img-circle" width="35" height="35" />
+				refencel
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">首页</a></li>
+				<li><a href="/categories.html">分类</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<!-- nav-menu-dropdown -->
+	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="/"><i class="fa fa-home"></i>首页</a></li>
+			<li><a href="/categories.html"><i class="fa fa-folder"></i>分类</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>返回顶部</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3 sidebar hidden-xs" style="">
+		<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="http://otqb97bc4.bkt.clouddn.com/logo.jpg" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="/">refencel</a>
+    </h3>
+</header>
+
+
+<div id="bio" class="text-center">
+	我的博客，记录你的点滴
+</div>
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:1252721319@qq.com">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+</div>
+<!-- sidebar.html end -->
+
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		<div class="page-header">
+  <h1>你应该掌握的10个jQuery代码片段 </h1>
+</div>
+	
+<article>
+
+	<div class="col-sm-12">
+	 <span class="post-date">	   2017-07-28
+	 </span>
+	  <div class="article_body">
+	  <p>jQuery被用在用在无数个网站的页面上，它是使用最为广泛的jsvascript库之一。jQuery的受欢迎程度的部分是它的简单性。它能够通过简单的语句完成大部分复杂的功能。有许多jQuery片段我们在每天不断重复的使用，这里总结了10条你必须知道的jQuery代码片段。</p>
+<h2 id="返回顶部">返回顶部</h2>
+<pre><code class="language-phtyon">&lt;a class="top" href="#"&gt;返回顶部&lt;/a&gt;
+</code></pre>
+<pre><code class="language-phtyon">$("a.top").click(function(){
+    $(document.body).animate({scrollTop: 0},800);
+    return false;
+})
+</code></pre>
+<p>如上所示，使用jQuery 的animate和scrollTop 可以十分方便的制作一个返回顶部的特效。<br />
+通过改变scrollTop 的值我们可以控制滚动条。在上面的例子中值设为0，是为了让页面滚动到最顶部。<br />
+上面的动画效果是在800ms内从页面底部滚动到页面的最顶部。</p>
+
+<h2 id="检查图片是否加载完毕">检查图片是否加载完毕</h2>
+<pre><code class="language-phtyon">$("img").load(function(){
+    console.log("图片加载成功")；
+})
+</code></pre>
+<p>有时候你需要检查图片是否被完全加载以便于完成后继的脚本，上面的jQuery代码可以帮助你完成这个任务</p>
+
+<h2 id="自动修复破损图像">自动修复破损图像</h2>
+<pre><code class="language-phtyon">$("img").error(function(){
+    $(this).attr("src", "images/broken.jpg");
+})
+</code></pre>
+<p>我们偶尔会在某些页面上弄错一些图片的链接，这时想要一一修复它们并不是一件容易的事情。使用上面的代码，可以快速的帮助我们解决这个问题。<br /></p>
+
+<h2 id="鼠标滑过时切换class">鼠标滑过时切换class</h2>
+<pre><code class="language-phtyon">$("a").hover(fucntion(){
+    $(this).addClass("hover");
+},function(){
+    $(this).removeClass("hover");
+})
+</code></pre>
+<p>这个jQuery片段在用户鼠标滑过目标时，给目标添加上指定样式，当然此处功能也可使用css来完成。</p>
+
+<h2 id="使input字段不可用">使input字段不可用</h2>
+<pre><code class="language-phtyon">$("input[type='submit']").attr("disabled", true);
+</code></pre>
+<p>有时候你可能会希望某个按钮或者某个input不可使用，直到用户触发某个条件，例如：点击了“勾选同意协议。。。”才能进行下一步操作。通过上面的代码可以使input不可点击，假如想恢复点击，可以使用下面的代码。</p>
+<pre><code class="language-phtyon">$("input[type='submit']").removeAttr("disabled");
+</code></pre>
+
+<h2 id="阻止超链接点击跳转">阻止超链接点击跳转</h2>
+<pre><code class="language-phtyon">$("a.no-link").click(function(e){
+    e.preventDefault();
+})
+</code></pre>
+<p>有时候我们不想让某个标签跳转链接，只是希望点击的时候触发脚本，这时，可以通过上面的jQuery代码片段来阻止浏览器的默认行为。</p>
+
+<h2 id="切换fadeslide效果">切换fade/slide效果</h2>
+<pre><code class="language-phtyon">//fade
+$(".btn").click(function(){
+    $(".el").fadeToggle("fade");
+})
+
+//slide
+$(".btn").click(function(){
+    $(".el").slideToggle("slide");
+})
+</code></pre>
+<p>滑动和淡入淡出是我们经常使用到的效果。</p>
+
+<h2 id="简单的手风琴效果">简单的手风琴效果</h2>
+<pre><code class="language-phtyon">// close all panels
+$("#accordion").find(".content").hide();
+
+//accordion
+$("#accordion").find("#accordion-header").click(function(){
+    var next = $(this).next();
+    next.slideToggle('fast');
+    $(‘.content’).not(next).slideUp('fast’);
+        return false;
+    });   
+})
+</code></pre>
+<p>要使用这个脚本你所要做的事情是编写一个必要的html结构代码。</p>
+
+<h2 id="使两个div高度相同">使两个DIV高度相同</h2>
+<pre><code class="language-phtyon">$('.div').css('min-height', $('.main-div').height());
+</code></pre>
+<p>有时候你希望两个div具有相同的高度和不同的内容，这个jQuery片段可以解决这个问题。它通过设置“min-height”来使div具有相同的高度。</p>
+
+<h2 id="无序列表隔行变色">无序列表隔行变色</h2>
+<pre><code class="language-phtyon">$('li:odd').css('background', '#E8E8E8’); 
+</code></pre>
+<p>通过这句代码你可以很容易的创建一个隔行变色的无序列表，你也可以将它移植到表格、div或其它元素上去。</p>
+
+	  </div>
+
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#jQuery-ref">
+					jQuery <span>(1)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		   
+
+		<hr>
+
+		<div>
+
+      <section class="col-sm-6 author">
+        <img src="http://otqb97bc4.bkt.clouddn.com/logo.jpg" class="img-rounded author-image" width="80" height="80" />
+        <h4 class="section-title author-name">refencel</h4>
+        <p class="author-bio">我的博客，记录你的点滴</p>
+      </section>
+    </div>
+
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous disabled"><a>&larr; 上一篇</a></li>
+		  
+		  
+			<li class="next disabled"><a>下一篇 &rarr;</a>
+		  
+		</ul>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; 2017 refencel
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'refencel', 'auto');
+  ga('send', 'pageview');
+</script>
+
